@@ -87,7 +87,7 @@
        <item>
         <widget class="QPushButton" name="btn_showDevTools">
          <property name="text">
-          <string>Show Left DevTools</string>
+          <string>Show DevTools</string>
          </property>
         </widget>
        </item>

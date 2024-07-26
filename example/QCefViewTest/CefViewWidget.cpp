@@ -1,4 +1,4 @@
-#include "CefViewWidget.h"
+﻿#include "CefViewWidget.h"
 
 #if defined(Q_OS_WIN)
 #include <windows.h>
@@ -113,6 +113,13 @@ CefViewWidget::mousePressEvent(QMouseEvent* event)
 #elif defined(Q_OS_LINUX)
 #else
 #endif
+}
+
+void
+CefViewWidget::dropEvent(QDropEvent* event)
+{
+
+  QCefView::dropEvent(event);
 }
 
 void

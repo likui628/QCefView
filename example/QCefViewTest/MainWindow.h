@@ -17,8 +17,7 @@ public:
   ~MainWindow();
 
 protected:
-  void createLeftCefView();
-  void createRightCefView();
+  void createCefView();
   void setupWindow();
 
   // QCefView slots
@@ -47,10 +46,6 @@ protected slots:
 protected slots:
   void onBtnShowDevToolsClicked();
 
-  void onBtnReloadRightViewClicked();
-
-  void onBtnRecreateRightViewClicked();
-
   void onBtnChangeColorClicked();
 
   void onBtnSetFocusClicked();
@@ -62,8 +57,7 @@ protected slots:
 private:
   Ui::MainWindow m_ui;
 
-  CefViewWidget* m_pLeftCefViewWidget = nullptr;
-  CefViewWidget* m_pRightCefViewWidget = nullptr;
+  CefViewWidget* m_pCefViewWidget = nullptr;
 };
 
 #endif // QCEFVIEWTEST_H

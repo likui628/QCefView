@@ -42,6 +42,8 @@ protected:
 
   void mousePressEvent(QMouseEvent* event) override;
 
+  void dropEvent(QDropEvent* event) override;
+
 private:
   void updateMask();
 

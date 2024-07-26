@@ -92,20 +92,6 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="btn_reloadRight">
-         <property name="text">
-          <string>Reload Right QCefView</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btn_recreateRight">
-         <property name="text">
-          <string>Recreate Right QCefView</string>
-         </property>
-        </widget>
-       </item>
-       <item>
         <widget class="QPushButton" name="btn_changeColor">
          <property name="text">
           <string>ChangeColor</string>
@@ -179,33 +165,11 @@
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
-      <widget class="QWidget" name="leftCefViewContainer" native="true">
+      <widget class="QWidget" name="cefViewContainer" native="true">
        <property name="styleSheet">
         <string notr="true">background-color: rgb(217, 183, 255)</string>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_cefContainer">
-        <property name="spacing">
-         <number>0</number>
-        </property>
-        <property name="leftMargin">
-         <number>0</number>
-        </property>
-        <property name="topMargin">
-         <number>0</number>
-        </property>
-        <property name="rightMargin">
-         <number>0</number>
-        </property>
-        <property name="bottomMargin">
-         <number>0</number>
-        </property>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="rightCefViewContainer" native="true">
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(217, 183, 255)</string>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_cefContainer_2">
         <property name="spacing">
          <number>0</number>
         </property>
@@ -231,8 +195,6 @@
  <layoutdefault spacing="6" margin="11"/>
  <tabstops>
   <tabstop>btn_showDevTools</tabstop>
-  <tabstop>btn_reloadRight</tabstop>
-  <tabstop>btn_recreateRight</tabstop>
   <tabstop>btn_changeColor</tabstop>
   <tabstop>lineEdit</tabstop>
   <tabstop>lineEdit_2</tabstop>
